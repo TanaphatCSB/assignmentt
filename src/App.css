@@ -1,0 +1,442 @@
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('./Font/Kanit-Regular.ttf') format('truetype');
+}
+
+@keyframes changeColor1 {
+  0% {
+    color: #39063f;
+  }
+  50% {
+    color: #b712b2a4;
+  }
+  100% {
+    color: #39063f;
+  }
+}
+
+* {
+  font-family: 'ChakraPetch', sans-serif;
+  font-weight: bold;
+}
+
+
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.Loginbackground{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 400px; 
+  margin: auto;
+  margin: 90px auto 0 auto; 
+  background-color: #f1a33c;
+  border-bottom: 10px solid  #ab6810;
+  border-right: 10px solid  #ab6810;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+  border-radius: 60px;
+  
+}
+
+.Login{
+  width: 100%;
+  padding: 40px ;
+}
+
+.Login input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  color: rgb(103, 28, 150);
+  font-weight: bold;
+ 
+}
+
+.Login input:hover{
+  color: white;
+}
+
+.Login h1{
+  font-weight: bold;
+  text-align: center;
+  color: #39063f;
+  transform: translateY(-50%);
+  font-size: 40px;
+  animation: changeColor1 4s ease-in-out infinite;
+}
+.Login p{
+  font-weight: bold;
+  color: #39063f;
+  animation: changeColor1 4s ease-in-out infinite;
+}
+
+.txtbox{
+  position: relative;
+  border-bottom: 5px solid  #39063f;
+  border-radius: 20px;
+  background-color: #56105e;
+  margin:30px 0;
+  width: 100%;
+  height: 30px;
+}
+
+.txtbox input{
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  color: white;
+}
+
+input[type="text"] {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.txtbox p{
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-80%);
+  color: #39063f;
+  left: -30px;
+  font-size: 15px;
+  padding: 35px;
+}
+
+.txtbox input:focus~p
+.txtbox input:valid~p{
+  top: -5px;
+}
+
+.txtbutton input{
+  color: #e2c587;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  background-color:#56105e;
+  border-bottom: 5px solid  #39063f;
+  border-radius: 20px; 
+  position: relative;
+}
+
+.txtbutton input:hover {
+  background-color: rgb(255, 255, 255);
+  color: #39063f;;
+}
+
+
+
+.Registerbg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 500px;
+  height: 1200px; 
+  margin: auto;
+  margin: 80px auto 0 auto; 
+  background-color: #f1a33c;
+  border-bottom: 10px solid  #ab6810;
+  border-right: 10px solid  #ab6810;
+  border-radius: 60px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+}
+
+.Register{
+  margin-top: -350px;
+  width: 500px;
+  height:800px;
+  color: #39063f;
+  font-weight: bold;
+  animation: changeColor1 4s ease-in-out infinite;
+}
+
+.Register p{
+  left:30px;
+  text-align: left;
+  position: relative;
+  
+}
+
+.Register input{
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  color: white;
+}
+.Register input{
+  color: #ffffff;
+  font-weight: bold;
+  width: 400px;
+  padding: 10px;
+  background-color:#56105e;
+  border-bottom: 5px solid  #39063f;
+  border-radius: 20px; 
+}
+
+.Register input[type="text"]{
+ color: white;
+}
+
+.input select{
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+  right: 160px;
+  width: 100px;
+  padding: 10px;
+  background-color:#56105e;
+  border-bottom: 5px solid  #39063f;
+  border-radius: 20px; 
+  cursor: pointer;
+}
+
+.mybutton{
+  align-items: center;
+  padding: 5px;
+}
+
+.mybutton input{
+  color:#ffc271;
+  font-weight: bold;
+  height: 50px;
+ width: 200px;
+}
+
+.mybutton input:hover{
+  background-color: white;
+  color: #56105e;
+}
+
+.modal {
+  position: fixed; /* ตั้งค่าให้โมดัลติดแนวตั้งและแนวนอน */
+  top: 0;
+  left: 0;
+  width: 100%; /* ขนาดครอบคลุมทั้งความกว้าง */
+  height: 100%; /* ขนาดครอบคลุมทั้งความสูง */
+  background-color: #000000a6; /* สีพื้นหลัง */
+  z-index: 999; /* ค่า z-index เพื่อให้โมดัลอยู่ด้านหน้า */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* ย้ายไปกลางจอ */
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 41, 55);
+  font-size: 20px;
+  width: 400px;
+  height: 120px; 
+  margin: auto;
+  border-radius: 10px;
+  padding: 50px;
+  font-weight: bold;
+  animation: slideIn 0.5s ease forwards; /* เรียกใช้ keyframe animation */
+}
+
+.modal-buttons {
+  text-align: center;
+}
+
+.modal-buttons button {
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: rgb(28, 60, 55);
+  color: white;
+  border: none;
+}
+
+.modal-buttons .notaccept {
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 78, 147);
+  border: none;
+}
+
+
+.modal-buttons button:hover {
+  background-color: #3d8f91;
+  color: #2a565d;
+}
+
+.modal-buttons .notaccept:hover {
+  background-color: #c40000;
+  color: white;
+}
+
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a6;
+  z-index: 999;  
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.alert-content {
+  text-align: center;
+  padding: 30px 70px;
+  background-color: #430f0f;
+  color: #dc4a3a;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%); /* ย้ายออกจากจุดเริ่มต้น */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease forwards; /* เรียกใช้ animation */
+}
+
+
+.alert-content:hover {
+  transform: translate(-50%, -50%) scale(1.05); /* เพิ่มขนาดเมื่อ hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* เพิ่มเอฟเฟ็กต์ shadow เมื่อ hover */
+}
+
+
+.alert h3 {
+  margin-top: 0;
+}
+
+.alert button {
+  padding: 10px 20px;
+  background-color: #f3dcb6;
+  color: #dc4a3a; /* สีข้อความ */
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.alert button:hover {
+  background-color:  #dc4a3a; /* สีเมื่อชี้เม้าส์ */
+  color: #f3dcb6;
+}
+
+
+@keyframes changeColor {
+  0% {
+    background-color: #f1a33c;
+  }
+  50% {
+    background-color: #eeaf5c;
+  }
+  100% {
+    background-color: #f1a33c;
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Welcome-message {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 500px;
+  height: 500px; 
+  margin: 90px auto 0 auto; 
+  background-color: #f1a33c;
+  border-bottom: 10px solid  #ab6810;
+  border-right: 10px solid  #ab6810;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+  border-radius: 60px;
+  color: #39063f;
+  animation: changeColor 4s ease-in-out infinite, moveUpDown 2s ease infinite;
+}
+
+
+.welcometext{
+  margin: auto;
+  margin: 150px auto 0 auto; 
+  animation: changeColor1 4s ease-in-out infinite;
+
+}
+
+.Welcome-message input{
+  color: #e2c587;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  background-color:#56105e;
+  border-bottom: 5px solid  #39063f;
+  border-radius: 20px; 
+  position: relative;
+  align-items: center;
+}
+
+
+.err{
+  color: red;
+}
